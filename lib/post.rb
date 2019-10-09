@@ -19,7 +19,7 @@ class Post
   end
   
   def author_name 
-    Author.exists?(author.name) ? author.name : nil
+    author.name ? author.name : nil
   end
 
 end
