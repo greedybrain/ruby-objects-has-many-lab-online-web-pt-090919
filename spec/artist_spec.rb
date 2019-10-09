@@ -38,6 +38,7 @@ describe "Artist" do
       it "takes in an argument of a song name, creates a new song with it and associates the song and artist" do
         adele.add_song_by_name("Rolling in the Deep")
         expect(adele.songs.last.name).to eq("Rolling in the Deep")
+        # ^ expecting the last element in adeles songs array to be 'Rolling in the Deep'
         expect(adele.songs.last.artist).to eq(adele)
       end
     end
