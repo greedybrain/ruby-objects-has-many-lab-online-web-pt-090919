@@ -38,7 +38,7 @@ describe 'Post' do
 
   describe '#author' do
     it 'belongs to an author' do
-      sophie = Author.new('Sophie')
+      # sophie = Author.new('Sophie')
       post.author = sophie
       expect(post.author).to eq(sophie)
     end
