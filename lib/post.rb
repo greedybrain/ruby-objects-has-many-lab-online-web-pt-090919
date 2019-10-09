@@ -21,7 +21,6 @@ class Post
   
   def author_name 
     author ? author.name : nil
-    # binding.pry
   end
 
 end
