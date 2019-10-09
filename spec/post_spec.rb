@@ -46,7 +46,7 @@ describe 'Post' do
 
   describe '#author_name' do
     it 'knows the name of its author' do
-      # sophie = Author.new('Sophie')
+      sophie = Author.new('Sophie')
       post.author = sophie
       expect(post.author_name).to eq('Sophie')
     end
